@@ -1,0 +1,10 @@
+^D:\C++ PROJECTS\NEGATE\NEGATE\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/C++ Projects/Negate/negate" "-BD:/C++ Projects/Negate/negate_build" --check-stamp-file "D:/C++ Projects/Negate/negate_build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
